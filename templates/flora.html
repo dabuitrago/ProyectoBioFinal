@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Flora{% endblock %}
+
+    {% block styles %}<link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">{% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<main>
+
+  <div class="container">
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/alt_cundiboyacense.jpg') }}" alt="altiplano" />
+        <h2>Flora</h2>
+      </div>
+      <p>A nivel de flora el Altiplano Cundiboyacense cuenta con más de 100 especies vegetales de las cuales 87 son nativas y 13 exóticas. En la imagen podemos observar el paisaje típico del altiplano en Boyacá. Las regiones del altiplano se conocen como Sabana de Bogotá y los Valles de Ubaté-Chiquinquirá, Valle de Pómeca y Valle de Tundama, incluyendo las montañas circundantes y que cuentan con elevaciones desde unos 2.400 hasta 3.800 metros sobre el nivel del mar, de los Andes Orientales de Colombia, que adminsitrativamente pertenecen al departamento de Boyacá (Valles de Chiquinquirá, Pomeca y Tundama) y al Departamento de Cundinamarca (Sabana de Bogotá y Valle de Úbate), así como al Distrito Capital de Bogotá. </p>
+    </article>  
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="imagenes_flora" src="{{ url_for('static', filename='img/images/flora/persea_americana.jpg') }}" alt="persea_americana" >
+        <h2>Persea Americana</h2>
+      </div>
+      <p>En Colombia, es silvestre y además se cultiva abundate en las estribaciones del Sistema Andino y la Sierra Nevada de Santa Marta. Su uso en clima frío como ornamental para parques, antejardines. En los climas cálidos y templados; para los primeros como plantaciones comerciales por su fruto de alto valor nutritivo y en los templados como sombrío de cafetales y comercialmente se usa para fines múltiples, entre ellos consevación de suelos.</p>
+    </article class>
+ 
+
+            
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/alcaparro_doble.jpg') }}" class="imagenes_flora" alt="Alcaparro Doble" />
+        <h2>Alcaparro Doble</h2>
+      </div>
+      <p>Se encuentra generalmente aislado a lo largo de las carrteras en potreros y cercanías a viviendas urbanas o rurales, en parques de cuidades de clima frío, como Bogotá, Sabana de Bogotá, y Valle de Ubaté - Chiquinquirá. Ocasional dentro del bosque, en el fondo de cañadas. No es resistente a las heladas, requiere exposición a pleno sol y ambiente húmedo.</p>
+    </article>
+    
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/mortino.jpg') }}" class="imagenes_flora" alt="mortino" />
+        <h2>Mortiño</h2>
+      </div>
+      <p>Se distribuye en pisos termicos frío en municipios como La Calera, Sopó y Subachoque, es asosicado con vegetación matorral entre los 2.600 y 2.900 m.s.n.m. Es resistente a las heladas y vientos fuertes. Los frutos son dulces comestibles, de color rojo a morado, los cuales son altamente apetecidos por la avifauna de la región.</p>
+    </article>
+
+
+    <article class="left">
+        <div class="img-container">
+          <img class="img" src="{{ url_for('static', filename='img/images/flora/nogal.webp') }}" class="imagenes_flora" alt="El_Nogal" />
+          <h2>Nogal</h2>
+        </div>
+        <p>El Nogal alcanza los 20 metros de altura, se usa en avenidas y parques amplios, cuando se someten a poda su figura es llamativa sobre el paisajismo. Actua como rompevientos y ayuda al conrtol de suelos. En la industria se usa para triplex, elementos decorativos, consrucción y carpinteria. </p>
+    </article>
+
+
+
+    <article class="right">   
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/frailejon.jpg') }}" class="imagenes_flora" alt="frailejon" />
+        <h2>Frailejon</h2>
+      </div>
+      <p>Cumplen una gran función en los páramos de retener el agua por medio de condensacion de las neblinas, conservarla y fijarla al suelo por capilaridad. Los frailejones tienen una característica básica como crecer un centímetro cada año.</p>
+    </article>
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/orquidea.jpg') }}" class="imagenes_flora" alt="orquidea" />
+        <h2>Orquidea</h2>
+      </div>
+      <p>
+      Se caracteriza por la belleza y vistosidad de sus flores.
+      Colombia es un país que cuenta con un gran número de especies de orquídeas y por este motivo es que la orquídea es considerada “la flor nacional”. Concretamente, se refiere a la variedad denominada Cattleya Trianae. Lleva este nombre en honor del naturalista Colombiano José Jerónimo Triana.
+      </p>
+    </article>
+
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/guamo.webp') }}" class="imagenes_flora" alt="guamo" />
+        <h2>Guamo</h2>
+      </div>
+      <p>Se le cultiva por sus grandes vainas comestibles y por su aporte a la rotación de cultivos de fijación de nitrógeno. La vaina comestible se conoce como"guama" en Colombia. Es una de las especies de más extenso uso para sombra en cafetales en el neotrópico. </p>
+    </article>
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/yarumo_blanco.jpeg') }}" class="imagenes_flora" alt="Yarumo_Blanco" />
+        <h2>Yarumo Blanco</h2>
+      </div>
+      <p>También conocido como guarumbo plateado, crece en climas cálidos y en zonas montañosas hasta 2500 m s.n.m., como selvas nubladas y bosques andinos. Destaca por sus hojas de color blanco plateado. Sin embargo, esta coloración es una ilusión óptica: las hojas son verdes, pero están cubiertas por una densa capa de pelos que difracta la luz, produciendo el brillo característico. Esta adaptación mejora la eficiencia de la iluminación en las condiciones de la selva nublada.</p>
+    </article>
+
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/chachafruto.jpg') }}" class="imagenes_flora" alt="Chachafruto" />
+        <h2>Chachafruto</h2>
+      </div>
+      <p>Es un árbol con ramas espinosas que alcanza hasta 14 m de altura, con muchas flores rojo anaranjadas. Originario de los Andes tropicales, prospera entre 1200 y 2600 m s. n. m. y requiere 1500 a 2000 mm de lluvia al año.</p>
+    </article>
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/cedro_altura.jpg') }}" class="imagenes_flora" alt="cedro_altura" />
+        <h2>Cedro de Altura</h2>
+      </div>
+      <p>El cedro es uno de los árboles más majestuosos en los bosques fríos alrededor de Bogotá. Ha sido apreciado como ornamental y se conservan viejos ejemplares en fincas y plazas. Sin embargo, muchos han sido talados debido a su excelente madera, muy empleada en construcción y ebanistería.</p>
+    </article>
+
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/totora.jpg') }}" class="imagenes_flora" alt="totora" />
+        <h2>Totora</h2>
+      </div>
+      <p>
+      Totora comunmente llamada junco, es una planta herbácea perenne acuática, común en esteros y pantanos de América del Sur.
+      Su tallo mide entre uno y tres metros, tiene usos en la construcción de techos y paredes para cobertizos y ranchos, y mobiliario. 
+      </p>
+    </article>
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/cortadera.jpeg') }}" class="imagenes_flora" alt="cortadera" />
+        <h2>Cortadera</h2>
+      </div>
+      <p>Nombres comunes: Cortadera, juncias. <br>
+    Es fácil encontrarla en la mayoría de los humedales de Bogotá.
+    Usos: Utilizado por los campesinos para tejer cestas y esteras, las semillas son consumidas por las aves, estabiliza las riberas de los cuerpos de agua, también son utilizadas para la producción del papel y como combustible.
+      </p>
+    </article>
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/heliconia.webp') }}" class="imagenes_flora" alt="Heliconia" />
+        <h2>Heliconia</h2>
+      </div>
+      <p>Heliconia L. es un género que agrupa más de 100 especies de plantas tropicales. Se les llama platanillo por sus hojas o ave del paraíso y pinza de langosta. La mayoría de las especies son ornamentales, aunque algunas especies es comestible asado o cocinado, usando la hoja como envoltorio de tamales.</p>
+    </article>
+
+
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="i{{ url_for('static', filename='img/images/flora/papiro.jpg') }}" class="imagenes_flora" alt="papiro" />
+        <h2>Papiro Enano</h2>
+      </div>
+      <p>El papiro enano es una planta anfibia o planta acuática en estanques de poca profundidad, en terrenos inundables, en una maceta o directamente en el sustrato de tu jardín.
+        Esta especie es un filtro natural muy eficiente por lo que es usada en proyectos de tratamiento de aguas contaminadas.</p>
+    </article>
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/aloe_arborescens.jpg') }}" class="imagenes_flora" alt="aloe arborescens" />
+        <h2>Aloe Arborescens</h2>
+      </div>
+      <p>La floración se produce en invierno. El fruto se presenta en una cápsula de paredes finas, que encierra muchas semillas.</p>
+    </article>
+
+
+    <article class="left">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/magellanica.jpg') }}" class="imagenes_flora" alt="fuchsia_magellanica" />
+        <h2>Fuchsia Magellanica</h2>
+      </div>
+      <p>La Fuchsia magellanica, es un arbusto que puede alcanzar una altura de 2 a 4 metros. Las flores tienen una forma tubular distintiva, con pétalos grandes y curvados hacia atrás. Estas flores son muy llamativas, exhibiendo una variedad de colores que pueden ser rosados, morados, rojos, blancos o combinaciones de estos colores vivos.</p>
+    </article>
+
+
+
+    <article class="right">
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/flora/mermelada.jpg') }}" class="imagenes_flora" alt="Mermelada" />
+        <h2>Mermelada</h2>
+      </div>
+      <p>Es un arbusto que produce las flores agrupadas y que cambian gradualmente de color de amarillo a rojo, teniendo la apariencia de la mermelada de naranja. Los tallos son espléndidos llegando a alcanzar los 1-2 metros de altura. Las hojas son ovaladas o elípticas de color verde oscuro. Las flores son tubulares de 3-4 cm de longitud con pétalos lobulados.</p>
+    </article>
+
+</main>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% from 'macros.html' import table_component %}
+{% extends 'base.html' %}
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/parques.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+
+<main>
+    <div class="container">
+
+        <div>
+            <article class=>
+             <p>Colombia es uno de los países más ricos en diversidad biológica y cultural en el mundo. Actualmente, esa diversidad está representada en 59 áreas naturales protegidas pertenecientes al Sistema de Parques Nacionales Naturales (SPNN), que con un total de 17’537.882,97* hectáreas representa el 8.47% de la superficie nacional (marina y terrestre). Dicha extensión de áreas protegidas del SPNN corresponde a un 12.62% del área continental a nivel nacional y un 3.37% del área marina a nivel nacional. 
+             </p>
+            </article>
+        </div>
+        <div>
+            <article class=>           
+
+              <p>En departamento de Cundinamarca se cuentan con 358,319.03  hectáreas de área protegida y 392,790.51 en Boyacá de las cuales se detallan por paramo las hectáreas ocupadas y los municipios con los que delimitan:</p>
+            </article>            
+           
+            {{ table_component() }}
+
+        </div>
+
+ </main>
+
+<!--script del mapa-->
+    <h2> Ubicación</h2>
+    <div id="mapa"></div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <script> 
+     var map = L.map('mapa').setView([5.091,-73.894], 8);
+     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          }).addTo(map);
+
+    var marker = L.marker([6.506,-72.136]).addTo(map)
+    .bindPopup('<b> Parque Nacional Natural El Cocuy</b>').openPopup();
+    var marker = L.marker([5.9166,-72.5977]).addTo(map)
+    .bindPopup('<b> Parque Nacional Natural Pisba</b>').openPopup();
+    var marker = L.marker([5.6064,-72.7734]).addTo(map)
+    .bindPopup('<b> Parque Nacional Natural Unidad Biogeográfica de Siscuncí Oceta</b>').openPopup();
+    var marker = L.marker([4.5655,-73.7512]).addTo(map)
+    .bindPopup('<b> Parque Nacional Natural Chingaza</b>').openPopup();
+    var marker = L.marker([5.2663,-73.9977]).addTo(map)
+    .bindPopup('<b> Páramo de Guargua y Laguna Verde</b>').openPopup();
+    var marker = L.marker([3.9410,-74.1138]).addTo(map)
+    .bindPopup('<b> Parque Nacional Natural Sumapaz</b>').openPopup();
+
+</script>
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+
+{% endblock %}

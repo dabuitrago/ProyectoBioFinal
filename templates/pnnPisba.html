@@ -1,0 +1,54 @@
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<main>
+
+    {{ weather_component(weather=weather, error=error) }}
+
+    <h1>Parque Nacional Natural Pisba</h1>
+      
+    <div class="container">
+        <h2>Descripción del Área</h2>
+
+        <p>Se ubica en la Cordillera Oriental de Colombia, en el departamento de Boyacá entre los municipios de Pisba, Mongua, Tasco, Socha y Socotá, y en el municipio de Támara en Casanare, entre las coordenadas 5º44’00» y 6º00’00» N; y 72º22’00» y 72º46’00» W, y tiene un rango altitudinal entre los 1.861 y 3.965 m.s.n.m. Abarca 45.032 ha. Se caracteriza por presentar ecosistemas de páramo, subpáramo y bosque alto andino, donde nacen importantes sistemas hídricos de las cuencas de la Orinoquía y el Magdalena. El área protegida tiene importancia histórica, ya que se encuentra la «Ruta Libertadora», utilizada durante la campaña libertadora en 1819 para alcanzar el centro del país y librar las batallas de Pantano de Vargas y Puente de Boyacá.</p>
+    </div>
+
+    <div class="container">
+        <h3>Galeria de Imagenes</h3>
+        <div class="slider-frame" >
+            <ul>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/pisba/pisba1.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/pisba/pisba2.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/pisba/pisba3.jpg') }}"></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/pisba/pisba4.jpg') }}" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="articule">
+        <h2> Fauna</h2>
+        <p>A nivel específico en el orobioma Páramo de la Cordillera Oriental se reportan 31 especies, de las que se destacan: los venados, Mazama rufina y Odocoileusgoudotii (Cervidae), Cerdocyon thous y Urocyon cinereoargenteus, zorro perruno y gatuno de la familia Canidae; Leopardus trigrinus (tigrillo) y Puma concolor (puma o león americano), ambos de la familia Felidae; como único representante de la familia Ursidae, Tremarctos ornatus (oso de anteojos); así como cuatro especies de murciélagos de alta montaña Anoura geoffroyi, Sturnira eryhromos, Histiotus montanus y Lasiurus cinereus. Entre los insectos, se destacan las mariposas con 27 especies en tres familias: Hesperiidae, Nymphalidae y Pieridae. Entre las especies de mamíferos de la Cordillera Oriental que se encuentran en alguna categoría de amenaza están el ratón runcho (Caenolestes fuliginosus obscurus, NT); tunato o chuchita (Marmosops fuscatus, NT); mico de noche o marteja (Aotus lemurinus, VU); nutria (Lontra longicaudis, VU); oso de anteojos (Tremarctos ornatus, VU); tigrillos (Leopardus tigrinus, VU, Leopardus pardalis, NT); «tigre» o jaguar (Panthera onca centralis, VU); puma o «león de montaña» (Puma concolor, NT); puerco espín pardo (Coendou vestitus, VU); guagua loba (Dinomys branickii, VU) y tinajo o borugo (Cuniculus taczanowskii, NT). Otras especies de mamíferos amenazadas a nivel global o nacional y que habitan la región son el churuco (Lagothrix lagothricha lugens, VU); la danta de tierras bajas (Tapirus terrestris columbianus, CR); y la tatabra o pecarí de labios blancos (Tayassu pecari, NT); los venados soche (Mazama rufina, DD) y coliblanco (Odocoileus goudotii, LC).</p>
+        
+        </div>
+        <div class="articule">
+            <h2> Flora</h2>
+            <p>Para el Parque Nacional Natural Pisba, se han reportado especies pertenecientes a los géneros Espeletia y Espeletiopsis ,entre las plantas vasculares de la Cordillera Oriental que habitan los ecosistemas boscosos se encuentran las palmas (Aiphanes graminifolia, A. killipii y Geonoma santanderensis); los platanillos (Heliconia estiletioides, H. lozanoi, H. oleosa, H. reptans); siete especies de hojarascos o magnolios nativos (Magnolia arcabucoana, M. argyrothricha, M. caricifragrans, M. cespedesii, M. georgii, M. santanderiana, M. virolinensis); el mogollo (Matisia uribei), el zapote silvestre (Matisia lozanoi); varias especies de orquídeas (Anguloa brevilabris, Masdevallia elephanticeps, M. hieroglyphica, Restrepia pandurata, Sobralia mutisii) y endémicas como la palma de cera de Sasaima (Ceroxylon sasaimae) y el roble negro (Colombobalanus excelsa). Entre las plantas vasculares amenazadas que habitan los bosques en la Cordillera Oriental destacan varios árboles maderables como el pino romerón (Retrophyllum rospigliosii, NT); pino colombiano (Podocarpus oleifolius, VU); pino hayuelo (Prumnopitys montana, VU); cadillón liso (Couepia platycalyx, EN); roble negro (Colombobalanus excelsa, VU); roble (Quercus humboldtii, VU), nogal (Juglans neotropica, EN); comino (Aniba perutilis, CR); coquillo o zapato (Eschweilera bogotensis, EN); hojarascos o magnolios nativos (Magnolia arcabucoana, EN, M. argyrothricha, EN, M. caricifragrans, EN, M. cespedesii, CR, M. georgii, EN, M. santanderiana, EN, M. virolinensis, CR) y cedros (Cedrela odorata, EN, Cedrela montana, VU).</p>
+            </div>
+    </div>
+
+</main>
+{% endblock %}

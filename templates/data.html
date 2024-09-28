@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}data{% endblock %}
+
+    {% block styles %}<link rel="stylesheet" href="{{ url_for('static', filename='css/general.css') }}">{% endblock %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="container"></div>
+    <h1 class="mt-5">Data Páramos</h3>       
+    <input class="form-control filter-input" id="filterInput" type="text" placeholder="Buscar...">
+
+    <div id="tableContainer">
+        {{ table|safe }}
+    </div>
+</div>
+
+<div class="container"></div>
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/Figure_1.png') }}" alt="altiplano" />
+
+</div>
+
+<div class="container"></div>
+      <div class="img-container">
+        <img class="img" src="{{ url_for('static', filename='img/images/Figure_2.png') }}" alt="altiplano" />
+        
+</div>
+
+<!--script de la Data Paramos-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#filterInput').on('input', function() {
+            var filterValue = $(this).val().toLowerCase();
+            $('#tableContainer table tr').each(function() {
+                var rowText = $(this).text().toLowerCase();
+                if (rowText.indexOf(filterValue) > -1) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
+
+
+{% endblock %}

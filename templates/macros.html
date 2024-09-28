@@ -1,0 +1,44 @@
+<!-- Este macro crea algo como un componente que se puede usar en cualquier archivo HTML del proyecto "Revisar documentación jinja2"-->
+
+<!-- Se pasan parámetros con valor de none para que al usar en componente se pasen los atributos con el valor de las variables establecidas en el archivo main.py -->
+{% macro weather_component(weather=None, error=None) %}
+    <div class="cuadrado">
+        <div class="inner-cuadrado">
+            <h3>Clima</h3>
+            <form action="{{ request.path }}" method="POST">
+                <input type="search" class="form-control" name="search">
+                <br>
+                <button class="button" type="submit">Buscar</button>
+            </form>
+        {% if weather %}
+            <p>{{ weather }}</p>
+        {% endif %}
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+        </div>
+    </div>    
+{% endmacro %}    
+
+{% macro table_component() %}
+
+    <h1>Páramos por Departamento</h1>
+
+    <label for="departamento">Selecciona un departamento:</label>
+    <select id="departamento">
+        <option value="Boyaca">Boyacá</option>
+        <option value="Cundinamarca">Cundinamarca</option>
+    </select>
+    <button onclick="getParamos()">Buscar</button>
+
+    <table id="paramos-table" border="1">
+        <thead>
+            <tr>
+                <th>Nombre del Páramo</th>
+                <th>Área Total (hectáreas)</th>
+                <th>Municipios</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+{% endmacro %}    
