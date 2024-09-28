@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Titulo por defecto{% endblock %}</title>
+    {% block styles %}{% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #mapa {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/" rel="noopener noreferrer"><img src="{{ url_for('static', filename='img/images/logoProyectoSF.png') }}" alt="logo-proyecto" width="100px" height="100px"></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="{{ url_for('ecosistemas') }}" rel="noopener noreferrer">Ecosistemas</a></li>
+                <li><a href="{{ url_for('fauna') }}" rel="noopener noreferrer">Fauna</a></li>
+                <li><a href="{{ url_for('flora') }}" rel="noopener noreferrer">Flora</a></li>
+                <li class="dropdown">
+                    <a href="{{ url_for('parques') }}" rel="noopener noreferrer">Parques Nacionales</a>
+                    <button class="dropbtn">▼</button>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('pnn_chingaza') }}">Parque Natural Nacional Chingaza</a>
+                        <a href="{{ url_for('pnn_cocuy') }}">Parque Natural Nacional El Cocuy</a>
+                        <a href="{{ url_for('paramo_guargua') }}">Paramo de Guargua y Laguna Verde</a>
+                        <a href="{{ url_for('pnn_oceta') }}">Parque Nacional Natural Sicuncí Ocetá</a>
+                        <a href="{{ url_for('pnn_pisba') }}">Parque Nacional Natural Pisba</a>
+                        <a href="{{ url_for('pnn_sumapaz') }}">Parque Nacional Natural Sumapaz</a>
+                        <a href="{{ url_for('data') }}">Datos Páramos</a>
+                        <a id="info" target="_blank" href="https://www.parquesnacionales.gov.co/">Más Información</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto Bio. Todos los derechos reservados.</p> 
+        <div class="social">    
+            <a href="https://facebook.com"><i class="ri-facebook-fill"></i></a>
+            <a href="https://instagram.com"><i class="ri-instagram-line"></i></a>
+            <a href="https://twitter.com"><i class="ri-twitter-x-line"></i></a>
+        </div>    
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const dropdown = document.querySelector('.dropdown');
+            const dropdownContent = document.querySelector('.dropdown-content');
+            const dropbtn = document.querySelector('.dropbtn');
+
+            dropbtn.addEventListener('click', (event) => {
+                event.preventDefault();
+                dropdownContent.classList.toggle('show');
+            });
+
+            // Cierra el dropdown si se hace clic fuera de él
+        window.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target)) {
+                dropdownContent.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

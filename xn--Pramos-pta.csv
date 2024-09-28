@@ -1,0 +1,56 @@
+﻿OBJECTID,SectorCod,Codigo,ComplejoNombre,DistritoNombre,SectorNombre,ComplejoCodigo,DistritoCodigo,AreaHa,ActoAdministrativo,ObjetoCodigo,Shape__Area,Shape__Length
+49,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,11287.849924,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-8,112878499.238464,133632.661234418
+50,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,983.80612984,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-9,9838061.30700684,27969.2710268042
+51,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,561.46041497,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-7,5614604.14855957,27700.0872184248
+52,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,563.77317794,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-10,5637731.77941895,17273.7431607514
+53,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,312.45253007,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-6,3124525.30450439,23941.4812586875
+54,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,72.70164291,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-11,727016.427429199,4611.73184161163
+55,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,10.25692011,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-12,102569.201416016,1666.86276546436
+56,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,945.95840096,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-5,9459584.00982666,36406.4447588121
+57,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,493.00258208,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-4,4930025.82275391,21370.0515694761
+58,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,1296.12344464,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-13,12961234.4459229,44199.38249438
+59,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,529.76706468,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-2,5297670.64642334,15356.6949337699
+60,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,852.70587545,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-1,8527058.75268555,24843.7674614712
+61,CE,CE-CM-CHG,Páramo de Chingaza,Cundinamarca,Cordillera Oriental,CHG,CM,93756.9605941,Resolución MADS 0710 del 26 de mayo de 2016,CE-CM-CHG-3,937569605.931396,667357.890134649
+62,CE,CE-CM-RRB,Rabanal y río Bogotá,Cundinamarca,Cordillera Oriental,RRB,CM,11096.5483118,Resolucion MADS 1768 del 28 de octubre de 2016,CE-CM-RRB-01,110965483.037109,117047.828732119
+63,CE,CE-CM-RRB,Rabanal y río Bogotá,Cundinamarca,Cordillera Oriental,RRB,CM,10030.0351418,Resolucion MADS 1768 del 28 de octubre de 2016,CE-CM-RRB-02,100300351.409424,88306.9951910513
+64,CE,CE-CM-RRB,Rabanal y río Bogotá,Cundinamarca,Cordillera Oriental,RRB,CM,3523.48026568,Resolucion MADS 1768 del 28 de octubre de 2016,CE-CM-RRB-03,35234802.5981445,44782.052180961
+65,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,1251.74454095,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-7,12517445.40802,48532.6847984564
+66,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,144.54062081,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-6,1445406.20935059,8201.15529638371
+67,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,307.67503148,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-5,3076750.31567383,13090.3287730161
+68,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,1096.88003636,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-4,10968800.3641357,33176.3144996311
+69,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,196.09036638,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-3,1960903.66113281,20336.1290487467
+70,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,37078.2575902,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-1,370782575.89856,413908.702010621
+71,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,3077.85028997,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-2,30778502.8997803,57589.9470557951
+72,CE,CE-CM-GUE,Guerrero,Cundinamarca,Cordillera Oriental,GUE,CM,75.82178776,Resolucion MADS 1769 del 28 de octubre de 2016,CE-CM-GUE-8,758217.874816895,9339.3529024791
+73,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,123.8336537,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1238336.53857422,8174.31759342821
+74,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,189.83100981,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1898310.09777832,7822.02562743
+75,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,164.87293532,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1648729.35394287,11202.3186303007
+76,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,1075.13823336,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,10751382.3319092,31829.2625044015
+77,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,206.54586042,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,2065458.60424805,13518.494552985
+78,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,113.59932677,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1135993.26721191,8229.36716771052
+79,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,209.57005886,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,2095700.59033203,9226.08314332901
+80,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,82.09391895,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,820939.190551758,4717.95440266806
+81,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,248.64180651,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,2486418.06445313,16093.6800884076
+82,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,191.31045137,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1913104.51281738,13708.6255558744
+83,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,142.58717407,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1425871.74047852,11121.4275314709
+84,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,156.31249641,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,1563124.96203613,12417.0900967303
+85,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,1462.57141161,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,14625714.1147461,47280.0180951715
+86,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,825.43147078,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,8254314.70397949,30116.2191862234
+87,CE,CE-AP-ACB,Altiplano Cundiboyacense,Altiplano,Cordillera Oriental,ACB,AP,606.19251574,Resolucion MADS 1770 del 28 de octubre de 2016,CE-AP-ACB-01,6061925.15637207,17315.452613773
+88,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,141.90333136,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,1419033.31164551,8608.10139604597
+89,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,191.36486442,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,1913648.64660645,14889.1296748237
+90,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,761.2163245,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,7612163.24487305,20859.099490868
+91,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,1560.27337523,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,15602733.7457275,65765.9029929596
+92,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,3369.08307778,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,33690830.7767334,57190.814278928
+93,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,4209.87395928,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,42098739.5898438,54582.3673675811
+94,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,2290.09203803,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,22900920.3771973,48015.7598340413
+95,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,12667.1369564,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,126671369.562134,199862.019332703
+96,CE,CE-BY-IGM,Iguaque - Merchán,Boyacá,Cordillera Oriental,IGM,BY,1374.01960162,Resolucion MADS 1555 del 26 de septiembre de 2016,CE-BY-IGM-01,13740196.019165,31659.1636395142
+97,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,5155.26912745,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-01,51552691.2768555,88706.75202772
+98,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,232.64778449,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-02,2326477.84375,10054.7988926038
+99,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,398.90702263,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-03,3989070.22680664,22069.7857325804
+100,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,46.02162882,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-04,460216.287475586,5322.33851531442
+101,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,135.00187519,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-05,1350018.75262451,6925.21907051535
+102,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,308888.793586,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-06,3088887935.85175,1714569.32289547
+103,CE,CE-CM-SCV,Cruz Verde - Sumapaz,Cundinamarca,Cordillera Oriental,SCV,CM,209.10098742,Resolucion MADS 1434 del 14 de julio de 2017,CE-CM-SCV-07,2091009.87438965,6180.75745563467

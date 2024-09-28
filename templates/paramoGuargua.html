@@ -1,0 +1,54 @@
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<main>
+     <!-- Se llama al macro y se le pasan los atributos con las variables definidas en main.py -->
+     {{ weather_component(weather=weather, error=error) }}
+    <h1>Parque Nacional Natural </h1>
+    <h1>Páramo de Guargua y Laguna Verde</h1>
+      
+    <div class="container">
+        <h2>Descripción del Área</h2>
+        <p>La Reserva Forestal Protectora Páramo de Guargua y Laguna Verde y los Distritos de Manejo Integrado Páramo de Guerrero y Páramo de Guargua y Laguna Verde, se localizan en la región Norte - Centro del departamento Cundinamarca, dentro de las cuencas de los ríos Bogotá, Ubaté- Suárez y Minero. Según la distribución de las oficinas provinciales de la CAR, las áreas declaradas están dentro de la jurisdicción de las provincias de Rionegro, Ubaté-Suárez y Sabana Norte.</p>
+        <br>
+        <p>La Reserva Forestal del nacimiento de la Quebrada Honda y Calderitas14 tienen una extensión de 475,3 ha y la Reserva Forestal protectora de laguna de Pantano Redondo y Nacimiento del río Susaguá15 1,361,2 ha, para un total de 1836.5 ha Posteriormente, se declaró el Distrito de Manejo Integrado Páramo de Guerrero16 con una extensión de 3760 hectáreas, dentro de las cuales están incluidas las dos reservas anteriores.</p>
+
+        <div class="container">
+            <h3>Galeria de Imagenes</h3>
+            <div class="slider-frame" >
+                <ul>
+                    <li> <img src="{{ url_for('static', filename='img/img_cund/paramoGuargua/guargua1.jpg') }}" alt=""></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_cund/paramoGuargua/guargua2.webp') }}" alt=""></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_cund/paramoGuargua/guargua3.jpeg') }}" alt=""></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_cund/paramoGuargua/guargua4.jpg') }}" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="articule">
+        <h2> Fauna y Flora</h2>
+        <li>102 familias , 194 generos y 376 especies de plantas distribuidas en las unidades de paramo , subpáramo, bosque altoandino, matorrales y rastrojos bajos</li>
+        <li>  4 especies endémicas regionales de frailejón: Espeletia cayetana , Espeleta barclayana, y espeletiopsis corymbosa.</li>
+        <li>  98 especies de aves, 21 mamiferos, 8 de anfibio y 7 de reptiles.</li>
+        <li>  1 nueva especie de rana endémica local Eleutherodactylus sasaguae ( Familia leptodactylidae).</li>
+        <li>  27 especies con algún grado de amenaza ; Las aves con 23 especies son las que se encuentran en mayor estado de vulnerabilidad.</li>
+        </div>
+    
+    </div>
+
+</main>
+{% endblock %}

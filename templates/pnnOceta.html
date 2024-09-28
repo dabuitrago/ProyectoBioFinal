@@ -1,0 +1,57 @@
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<main>
+
+    {{ weather_component(weather=weather, error=error) }}
+
+    <h1>Parque Nacional Natural</h1>
+    <h1>Unidad Biogeográfica de Siscuncí Oceta</h1>
+      
+    <div class="container">
+        <h2>Descripción del Área</h2>
+
+        <p>Es un ecosistema típico de alta montaña tropical, conformado en su mayor parte por áreas de páramo, pastizales y relictos dispersos de rastrojo y bosque altoandino, localizado al oriente del Departamento de Boyacá, entre el lago de Tota y el PNN Pisba. Cons¬tituye una reserva hídrica de gran importancia para Boyacá y Casanare (Corpoboyacá & Fundación Neotropical, 2011).</p>
+        <br>
+        <p>El macizo conformado por los páramos de Toquilla –Siscunsí – Ocetá – San Ignacio los cuales hacen parte del PNR Siscunsí – Ocetá constituyen el corredor de conexión entre los páramos adyacentes al lago de Tota y los asociados al PNN Pisba, dando continuidad al ecosistema en esta área estratégica del nororiente colombiano (Corpoboyacá & Fundación Neotropical, 2011).</p>
+    </div>
+
+    <div class="container">
+        <h3>Galeria de Imagenes</h3>
+        <div class="slider-frame" >
+            <ul>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/oceta/oceta1.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/oceta/oceta2.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/oceta/oceta3.jpg') }}"></li>
+                <li> <img src="{{ url_for('static', filename='img/img_boy/oceta/oceta4.jpg') }}" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="articule">
+        <h2> Fauna</h2>
+        <p>Se pueden encontrar conejos sabaneros, ranas, condor, guatines y el venado de cola blanca.</p>
+        
+        </div>
+        <div class="articule">
+            <h2> Flora</h2>
+            <p>Se encuentran senecios, lupinus, musgos, liquines, y el frailejón el cual se encuentra en la mayor parte del paramo. El frailejón crece solo un centimetro por año y su tallo conserva el agua.</p>
+            </div>
+    </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<main>
+
+    {{ weather_component(weather=weather, error=error) }}
+    
+    <h1>Parque Nacional Natural Chingaza</h1>
+      
+    <div class="container">
+        <h2>Descripción del Área</h2>
+        <p>El Parque Nacional Natural Chingaza es un tesoro natural y cultural del centro de Colombia, la magia de sus montañas guarda secretos y pensamientos heredados de los Muiscas y los Guayupes (pueblos indígenas que resguardaban este territorio), así como de comunidades campesinas que habitaron la región hace menos de 40 años. En la actualidad, es refugio de fauna y flora de los Andes, que revelan al visitante el secreto de la vida.</p>
+        <br>
+        <p>El PNN está ubicado en la cordillera oriental de los Andes, al noreste de Bogotá; conformado por 11 municipios, 7 de Cundinamarca (Fómeque, Choachí, La Calera, Guasca, Junín, Gachalá y Medina) y 4 municipios del Meta (San Juanito, El Calvario, Restrepo y Cumaral).</p>
+    </div>
+
+    <div class="container">
+        <h3>Galeria de Imagenes</h3>
+        <div class="slider-frame" >
+            <ul>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/chingaza/chingaza1.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/chingaza/chingaza2.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/chingaza/chingaza3.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/chingaza/chingaza4.webp') }}" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="articule">
+        <h2> Fauna</h2>
+        <p>En el Parque Nacional Natural Chingaza se encuentra una amplia diversidad de fauna, adaptada a las diferentes condiciones topográficas y de relieve que se extiende a lo largo de un gradiente altitudinal entre los 800 y 4000 metros sobre el nivel del mar.</p>
+        <br>
+        <p>De la misma manera, la fauna ha evolucionado y se ha adaptado a la variedad ecosistémica y a las distintas formaciones vegetales. Se han reportado 101 especies de mamíferos, dentro de las que se destacan el Oso andino (Tremarctos ornatus), el Venado de cola blanca (Odocoileus virginianus goudotii), el Venado colorado (Mazama rufina) y el Puma (Puma concolor).
+            Por otra parte, se registran un total de 531 especies de aves como el Colibrí barbudito de páramo (Oxupogon gerinii), la Tingua bogotana (Rallus semiplumbeus), el Cóndor de los Andes (Vultur gryphus) y el Gallito de roca (Rupicola peruvianus) entre otros.
+            También se han registrado 49 especies de anfibios y 32 especies de reptiles, dentro de las cuales se destacan el Sapito arlequín (Atelopus lozanoi), la Rana de la lluvia (Pristimantis bogotensis), el Lagarto collarejo (Stenocercus trachycephalus) y la Salamanqueja (Gonatodes riveroi).</p>
+        </div>
+        <div class="articule">
+            <h2> Flora</h2>
+            <p>En el PNN Chingaza se encuentran algunos importantes endemismos de la flora colombiana, dentro de los cuales se destaca el Frailejón Espeletia uribei, cuyos individuos crecen en la franja de vegetación entre el páramo y el bosque alto andino. Se estima que la flora total del Parque sobrepasa las 1400 especies, es frecuente observar especies de musgo de pantano, los cuales absorben hasta 40 veces su peso en agua. En los bosques del alto andino predominan los Encenillos (Weinmannia spp.), el Gaque (Clusia multiflora) y el Tibar (Escallonia myrtilloides). Por su parte, en las zonas de páramo encontramos los frailejones (Espeletia grandiflora y E. killipii), los pajonales (en donde son representativas especies del género Calamagrostis), las árnicas (Senecio spp.) y comunidades de turberas en las zonas pantanosas.</p>
+            </div>
+    </div>
+
+</main>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+    <main>
+
+        {{ weather_component(weather=weather, error=error) }}
+
+        <h1>Parque Nacional Natural Cocuy</h1>
+          
+        <div class="container">
+            <h2>Descripción del Área</h2>
+    
+            <p>El Parque Nacional Natural El Cocuy, está ubicado al nororiente de la Cordillera Oriental de los Andes, entre los departamentos de Arauca, Boyacá y Casanare, tiene un área de 305.879 hectáreas. Por el costado occidental el Área Protegida inicia a los 4000 m s.n.m, hasta la máxima cresta de la cordillera a 5330 m s.n.m; por el costado oriental termina a los 600 m s.n.m en el piedemonte llanero de los departamentos de Arauca y Casanare.</p>
+            <p>En el costado occidental del AP, se encuentra la Sierra Nevada traslapada con los municipios de Güicán de la Sierra, El Cocuy, Chita y Chiscas.</p>
+            <p>Para el desarrollo del Ecoturismo se mantiene una zonificación de manejo llamada,  Zona de Recreación General Exterior, la cual cuenta con 4.915,84 hectáreas, y representa el 1,5% del total del área del Parque Nacional Natural El Cocuy, se localiza por encima de los 4.400 m s.n.m. en las inmediaciones de la Sierra Nevada en la vertiente occidental, desde el Portón de Lagunillas en límites de los municipios de Güicán y El Cocuy hasta los límites de los municipios de Güicán y Chiscas en las inmediaciones de la laguna Pantano hondo. Adicionalmente se incluyen las áreas que circundan la Sierra Nievecitas y las inmediaciones de la laguna Las Orozcas en el municipio de Chiscas.</p>
+        </div>
+
+        <div class="container">
+            <h3>Galeria de Imagenes</h3>
+            <div class="slider-frame" >
+                <ul>
+                    <li> <img src="{{ url_for('static', filename='img/img_boy/cocuy/cocuy1.jpg') }}" alt=""></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_boy/cocuy/cocuy2.jpg') }}" alt=""></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_boy/cocuy/cocuy3.jpg') }}"></li>
+                    <li> <img src="{{ url_for('static', filename='img/img_boy/cocuy/cocuy4.jpg') }}" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="articule">
+            <h2> Fauna</h2>
+            <p>En el Parque Nacional Natural Chingaza se encuentra una amplia diversidad de fauna, adaptada a las diferentes condiciones topográficas y de relieve que se extiende a lo largo de un gradiente altitudinal entre los 800 y 4000 metros sobre el nivel del mar.</p>
+            <br>
+            <p>Entre la fauna representativa se pueden encontrar animales como la danta (Tapirus pinchaque), morrocoy (Geochelone carbonaria), mico maicero (Cebus capucinus), venado cola blanca (Odocoileus virginiaus) y soche (Mazama rufina), saíno (Tayassu tazacu), guartinajo (Agouti taczanowskii), oso de anteojos (Tremarctos ornatos), puma (Puma concolor) y todos los félidos registrados para Colombia. Se podrán observar aves como el cóndor andino (Vultur gryphus), águila (Geranoaetus melanoleucus), gallito de roca (Rupícola rupícola), paujil copete de piedra (Pauxi pauxi), periquito aliamarillo (Pyrrhura calliptera) y cucarachero (Cistothorus apolinari ). El endemismo mas representativo es el lagarto collarejo (Sternocercus lache). </p>
+            </div>
+            <div class="articule">
+                <h2> Flora</h2>
+                <p>Se destacan el frailejón arbóreo ramificado (Libanothanenues tamanus), encenillo (Weinmannia spp.), abarco (Cariniana pyriformismiers), chusque (Chusqueu tesellata), varias especies de epífitas, y maderables como el amarillo (Oreopanax bogotense), cedro (Cedrela montana), totumo (Aegiphila grandis) y moho (Cordia alliodora). Los páramos húmedos de esta vertiente con sus frailejonales, cardones y cojines son un área de conservación estratégica. En el área hay identificadas cuatro especies endémicas de frailejón de los géneros Espelettia y Espeletiopsis. También se encuentran ocho especies endémicas de lítamo (Draba spp.).</p>
+                </div>
+        </div>
+    
+    </main>
+{% endblock %}    

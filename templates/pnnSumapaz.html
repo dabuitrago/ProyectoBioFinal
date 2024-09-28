@@ -1,0 +1,60 @@
+<!-- Cambio para revisión: Galería en la parte superior -->
+
+{% from 'macros.html' import weather_component %}
+{% extends 'base.html' %}
+
+
+{% block head %}
+
+    {% block title %}Parques{% endblock %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/pnnGaleria.css') }}">
+    {% endblock %}
+
+{% endblock %}
+
+
+{% block content %}
+<main>
+
+    {{ weather_component(weather=weather, error=error) }}
+
+    <h1>Parque Nacional Natural Sumapaz</h1>
+
+    <div class="container">
+        <h2>Descripción del Área</h2>
+        <p>El PNN Sumapaz alberga dentro de su extensión de 210.739 ha a los ecosistemas de páramo y bosque andino, que son el hábitat de una gran variedad de flora y fauna, además, cuenta con grandes capacidades de almacenamiento y distribución del agua. Así mismo, el AP abarca los municipios de Cubarral, Lejanías, Castillo, La Uribe, Acacias y Guamal (Meta), también Gutiérrez, Pasca, San Bernardo y Arbeláez (Cundinamarca) y dos localidades del Distrito Capital de Bogotá: Usme y Sumapaz. Igualmente, el PNN Sumapaz está ubicado sobre la cordillera oriental colombiana y protege los ecosistemas de páramo junto a los bosques andinos.</p>
+    </div>
+
+    <div class="container">
+        <h3>Galeria de Imagenes</h3>
+        <div class="slider-frame" >
+            <ul>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/sumapaz/sumapaz1.webp') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/sumapaz/sumapaz2.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/sumapaz/sumapaz3.jpg') }}" alt=""></li>
+                <li> <img src="{{ url_for('static', filename='img/img_cund/sumapaz/sumapaz4.jpeg') }}" alt=""></li>
+            </ul>
+        </div>
+    </div>
+      
+
+    <div class="container">
+        <div class="articule">
+        <h2> Fauna</h2>
+        <p>El PNN Sumapaz protege dentro de sus ecosistemas al Venado Soche (Mazama Rufina), el Conejo de páramo (Sylvilagus brasiliensis), el Borugo de páramo (Cuniculus paca), el Curí (Cavia anolaimae), el Ratón montanero (Thomasomys niveipes), el Cusumbo (Nasua nasua), y el Tapir de montaña (Tapirus pinchaque).
+            En el bioma de bosque andino, se han reportado a través de la metodología de cámara trampa, mamíferos asociados a la vegetación boscosa como tigrillos (Leopardus wiedii), pumas (Puma concolor), zarigüeyas (Didelphis pernigra), la Taira o Ulamá (Eira barbara), el Pecarí de collar (Pecari tajacu), b), el Oso melero (Tamandua tetradactyla), la Ardilla de cola roja (Notosciurus granatensis), el Puercoespín arborícola (Coendou prehensilis), el Armadillo de cola desnuda (Cabassous unicinctus), la Comadreja de cola larga (Mustela frenata) y el Ocelote (Leopardus pardalis).
+            Entre otras especies, también se ha avistado al Oso de anteojos (Tremarctos ornatus) en los límites del municipio de Gutiérrez (Cundinamarca), así como al Guatín o Cotiara (Dasyprocta fuliginosa), el Jaguarundí (Puma yagouaroundi) y el Zorro cangrejero (Cerdocyon thous).
+            </p>
+        </div>
+        <div class="articule">
+            <h2> Flora</h2>
+            <p>Dentro de los rasgos florísticos del páramo se encuentran comunidades cerradas con matorrales de Asteraceae y bosques achaparrados con Polylepis, formaciones abiertas con Espeletia y pajonales con Calamagrostis. Adicionalmente, se destacan las extensiones de pastizales, prados, turberas, chuscales y tremedales. Así mismo, hay 4 especies de frailejón endémicas: E. cabrerensis, E. summapacis, E. tapirophila y E. miradorensis.
+                Del mismo modo, entre las especies vegetales dominantes que se encuentran en el bosque subandino, se destacan el Guaimaro punta de lanza, el Cucharo y el Corneto, con relictos del bosque secundario que están representados por palmas y árboles como  los guamos, amarillos, palmas de cumare, palmas yagua, palmas churruay y tunos. En términos de familias botánicas, se evidencia una notoria abundancia de Sapotaceae y Lauraceae. Así mismo, el género Pouteria y Chrysophyllum son los más abundantes dentro de este ecosistema. Cabe resaltar, que actualmente los estudios florísticos que se están desarrollando en estos bosques, arrojan resultados que se encuentran en proceso de revisión para su determinación taxonómica.  
+                </p>
+            </div>
+    </div>
+
+</main>
+{% endblock %}
